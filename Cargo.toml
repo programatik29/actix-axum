@@ -1,0 +1,22 @@
+[package]
+name = "actix-axum"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-http = "3"
+actix-server = "2"
+actix-service = "2"
+bytes = "1"
+futures-util = "0.3"
+http = "0.2"
+http-body = "0.4"
+parking_lot = "0.12"
+pin-project-lite = "0.2"
+sync_wrapper = "0.1"
+tokio = { version = "1", features = ["net"] }
+tower-service = "0.3"
+
+[dev-dependencies]
+axum = "0.5"
+tokio = { version = "1", features = ["full"] }
